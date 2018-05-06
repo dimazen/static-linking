@@ -21,6 +21,7 @@
 		E8033FB5209F47FA004B36E1 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8033FA0209F4666004B36E1 /* Shared.framework */; };
 		E8033FB8209F4807004B36E1 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8033FA0209F4666004B36E1 /* Shared.framework */; };
 		E8033FB9209F4807004B36E1 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8033FA0209F4666004B36E1 /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8033FBB209F4BB0004B36E1 /* SharedTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8033FBA209F4BB0004B36E1 /* SharedTestClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		E8033FA2209F4666004B36E1 /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		E8033FA3209F4666004B36E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8033FAD209F4674004B36E1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E8033FBA209F4BB0004B36E1 /* SharedTestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				E8033FA2209F4666004B36E1 /* Shared.h */,
+				E8033FBA209F4BB0004B36E1 /* SharedTestClass.swift */,
 				E8033FA3209F4666004B36E1 /* Info.plist */,
 			);
 			path = Shared;
@@ -268,6 +271,7 @@
 					};
 					E8033F9F209F4666004B36E1 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -340,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8033FBB209F4BB0004B36E1 /* SharedTestClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +606,7 @@
 		E8033FAA209F4666004B36E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -622,6 +628,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Shared;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -632,6 +639,7 @@
 		E8033FAB209F4666004B36E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

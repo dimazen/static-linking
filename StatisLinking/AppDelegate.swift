@@ -9,6 +9,7 @@
 import UIKit
 import StaticLinkingCore
 import Alamofire
+import Shared
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let b = SessionManager.default
         print(ObjectIdentifier(b))
+        
+        SharedTestClass.test()
         
         return true
     }
