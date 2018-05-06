@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let b = SessionManager.default
         print(ObjectIdentifier(b))
         
-        SharedTestClass.test()
+//        SharedTestClass.test()
         
         return true
     }

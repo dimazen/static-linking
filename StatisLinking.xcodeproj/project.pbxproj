@@ -21,7 +21,7 @@
 		E8033FB5209F47FA004B36E1 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8033FA0209F4666004B36E1 /* Shared.framework */; };
 		E8033FB8209F4807004B36E1 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8033FA0209F4666004B36E1 /* Shared.framework */; };
 		E8033FB9209F4807004B36E1 /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8033FA0209F4666004B36E1 /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E8033FBB209F4BB0004B36E1 /* SharedTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8033FBA209F4BB0004B36E1 /* SharedTestClass.swift */; };
+		E8033FBD209F4DE5004B36E1 /* SharedTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8033FBA209F4BB0004B36E1 /* SharedTestClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8033FBB209F4BB0004B36E1 /* SharedTestClass.swift in Sources */,
+				E8033FBD209F4DE5004B36E1 /* SharedTestClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +625,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Shared;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -658,6 +659,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Shared;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

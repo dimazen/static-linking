@@ -1,11 +1,4 @@
 
-import Foundation
-import Alamofire
-
-public final class SharedTestClass {
-    
-    public static func test() {
-        let a = SessionManager.default
-        print(ObjectIdentifier(a))
-    }
-}
+/// Having an empty class forces compiler to link its standard libraries.
+/// This for some reason resolves compiler errors about missing stdlibs symbols while builindg linked dependencies
+final class SharedTestClass {}
